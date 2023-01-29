@@ -4,35 +4,39 @@ description: "MDX sandbox page"
 pubDate: "Jan 29 2023"
 ---
 
-export const title = 'はじめてのMDXの投稿'
-export const Thing = () => <>World</>
-export const name = 'world'
-import About from '../../pages/about.md'
-import Chart from './chart.astro'
-
-# {title}
-Hello <Thing />
-
-Hello {name.toUpperCase()}
-
-{'mdx'.toUpperCase()}
+export const Thing = () => <>{'mdx'.toUpperCase()}</>
 
 <div style={{ padding: '20px', backgroundColor: 'tomato' }}>
-  <h3>This is MDX</h3>
+  <h3>This is <Thing /></h3>
 </div>
 
 ```javascript
-'mdx'.toUpperCase()
+import Chart from './chart.astro'
+
+<Chart />
+```
+
+import Chart from './chart.astro'
+
+<Chart />
+
+```javascript
+<ul>
+    {[...Array(5)].map((_, i) => <li key={i}>item {i+1}</li>)}
+</ul>
 ```
 
 <ul>
     {[...Array(5)].map((_, i) => <li key={i}>item {i+1}</li>)}
 </ul>
 
-<Chart />
+```javascript
+import About from '../../pages/about.md'
 
-```html
 <About />
 ```
+
+import About from '../../pages/about.md'
+
 <About />
 
