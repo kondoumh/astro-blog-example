@@ -2,5 +2,20 @@
 import ExampleChart from '../../components/ExampleChart.tsx';
 ---
 
-<h2>Example Chart</h2>
-<ExampleChart client:load></ExampleChart>
+<html lang="en">
+	<head>
+    <style>
+			.title {
+				font-size: 2em;
+				margin: 0.25em 0 0;
+			}
+			hr {
+				border-top: 1px solid #ddd;
+				margin: 1rem 0;
+			}    </style>
+  </head>
+  <body>
+    <h2>Example Chart</h2>
+    <ExampleChart client:load></ExampleChart>
+  </body>
+</html>
