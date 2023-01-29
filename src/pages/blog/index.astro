@@ -41,7 +41,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<time datetime={post.data.pubDate.toISOString()}>
-									{post.data.pubDate.toLocaleDateString('en-us', {
+									{post.data.pubDate.toLocaleDateString('ja-JP', {
 										year: 'numeric',
 										month: 'short',
 										day: 'numeric',
