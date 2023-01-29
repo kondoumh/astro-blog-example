@@ -4,11 +4,11 @@ description: "MDX sandbox page"
 pubDate: "Jan 29 2023"
 ---
 
-export const Thing = () => <>{'mdx'.toUpperCase()}</>
+import Chart from './chart.astro'
 
-<div style={{ padding: '20px', backgroundColor: 'tomato' }}>
-  <h3>This is <Thing /></h3>
-</div>
+## Example Chart (hydrated)
+<Chart />
+
 
 ```javascript
 import Chart from './chart.astro'
@@ -16,9 +16,22 @@ import Chart from './chart.astro'
 <Chart />
 ```
 
-import Chart from './chart.astro'
+import ExampleChart from './example-chart.jsx'
 
-<Chart />
+## Example Chart (SSG)
+<ExampleChart />
+
+```javascript
+import ExampleChart from './example-chart.jsx'
+
+<ExampleChart />
+```
+
+export const Thing = () => <>{'mdx'.toUpperCase()}</>
+
+<div style={{ padding: '20px', backgroundColor: 'tomato' }}>
+  <h3>This is <Thing /></h3>
+</div>
 
 ```javascript
 <ul>
