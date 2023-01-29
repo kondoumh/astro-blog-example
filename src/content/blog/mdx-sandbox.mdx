@@ -8,6 +8,7 @@ export const title = 'はじめてのMDXの投稿'
 export const Thing = () => <>World</>
 export const name = 'world'
 import About from '../../pages/about.md'
+import Chart from './chart.astro'
 
 # {title}
 Hello <Thing />
@@ -28,7 +29,10 @@ Hello {name.toUpperCase()}
     {[...Array(5)].map((_, i) => <li key={i}>item {i+1}</li>)}
 </ul>
 
+<Chart />
+
 ```html
 <About />
 ```
 <About />
+
