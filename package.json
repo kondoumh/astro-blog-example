@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdoc": "^0.0.2",
     "@astrojs/mdx": "^0.18.1",
     "@astrojs/rss": "^2.3.0",
     "@astrojs/sitemap": "^1.2.1",
@@ -19,5 +20,8 @@
   },
   "devDependencies": {
     "@astrojs/react": "^2.1.0"
+  },
+  "overrides": {
+    "@astrojs/compiler": "1.2.0"
   }
 }
