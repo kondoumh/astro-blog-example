@@ -1,0 +1,43 @@
+---
+title: "Using Markdoc"
+description: "Markdoc usage page"
+pubDate: "Mar 20 2023"
+---
+
+## Why Markdoc?
+
+### Markdown table
+
+| Italics   | Bold     | Code   |
+| --------- | -------- | ------ |
+| _italics_ | **bold** | `code` |
+
+### Markdoc table
+
+{% table %}
+- Italics
+- Bold
+- Code
+---
+- _italics_
+- **bold**
+- `code`
+{% /table %}
+
+## Custom Tag (callout)
+
+{% callout type="check" title="Check" %}
+    This is a check callout.
+{% /callout %}
+
+{% callout type="error" title="Error" %}
+    This is a error callout.
+{% /callout %}
+
+{% callout type="note" title="Note" %}
+    this is a note callout.
+{% /callout %}
+
+{% callout type="warning" title="Warning" %}
+    this is a woaning callout.
+{% /callout %}
